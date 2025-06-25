@@ -10,7 +10,10 @@ const server = http.createServer(app);
 // Configure Socket.IO with CORS
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "famous-donut-dfec3a.netlify.app"
+    ],
     methods: ["GET", "POST"],
   },
 });
