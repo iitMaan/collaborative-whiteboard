@@ -1,0 +1,16 @@
+[phases.setup]
+nixPkgs = ["nodejs"]
+
+[phases.install]
+cmds = [
+  "cd server && npm install",
+  "cd ../whiteboard-app && npm install"
+]
+
+[phases.build]
+cmds = [
+  "cd whiteboard-app && npm run build"
+]
+
+[start]
+cmd = "node server/index.js"
