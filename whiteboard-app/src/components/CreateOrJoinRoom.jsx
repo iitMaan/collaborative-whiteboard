@@ -66,8 +66,11 @@ const CreateOrJoinRoom = () => {
             type="text"
             name="roomId"
             placeholder="Enter Room ID"
-            className="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="bg-transparent text-center text-lg py-2 px-4 
+             border-b-2 border-muted-foreground 
+             focus:outline-none focus:border-primary transition-all w-64"
           />
+
           <button
             type="submit"
             className="bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-2 rounded-lg transition"
